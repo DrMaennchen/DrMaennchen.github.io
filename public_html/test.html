@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Roland Männchen, Kieferorthopädischen, Winterthur</title>
+    <meta name="description" content="Willkommen in der kieferorthopädischen Praxis Dr. R. Männchen, Winterthur" />
+    <meta name="keywords" content="winterthur, zahnspangen, kieferorthopäde, schweiz, zahnarzt" />
+    <link rel="icon" href="resources/resized/medium/LogoPraxMail.jpg">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Open Sans', sans-serif;
+            color: #262626;
+            margin: 0px;
+            word-break: break-word;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 275%;
+        }
+
+        img {
+            height: auto
+        }
+
+        #nav {
+            font-size: 110%;
+            text-transform: uppercase;
+            text-align: right;
+            letter-spacing: 1px;
+            margin: 35px 0 35px 0px;
+        }
+
+        #nav a {
+            color: #333132;
+            text-decoration: none;
+            font-weight: 400;
+            padding: 30px 8px 30px 8px;
+            margin-right: 10px;
+            margin-left: 10px;
+            transition: color 0.1s ease;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+
+        #nav a:hover {
+            color: #58c0d0;
+            border-bottom: 3px solid #58c0d0;
+        }
+
+        ol,
+        ul {
+            text-align: left
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        .container {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            justify-content: center;
+            -webkit-justify-content: center
+        }
+
+        .page {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .evenNumbered {
+            color: #2985c4;
+            background: white
+        }
+
+        .oddNumbered {
+            background: radial-gradient(circle farthest-side at center bottom, #2985c4, #58c0d0 125%)
+        }
+
+        .list_item {
+            width: 47%;
+            height: auto;
+            margin: 10px;
+            max-width: 600px;
+            min-width: 250px;
+        }
+
+        .pageItem img {
+            width: 100%
+        }
+
+        .fullWidth {
+            width: 100%;
+            min-width: 250px;
+            max-width: 600px;
+        }
+
+        .css-button.style-1 {
+            cursor: pointer;
+            line-height: 1;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            border-style: solid;
+        }
+
+        .css-button.style-1 .text {
+            padding: 0 0px;
+            white-space: normal
+        }
+
+        .css-button.style-1 .subtext {
+            margin: .2em 0 -.5em 0
+        }
+
+        .css-button .text,
+        .css-button .subtext {
+            display: block;
+            position: relative;
+            z-index: 1
+        }
+
+        .css-button .gradient {
+            /*background: linear-gradient(to bottom, rgba(255, 255, 255, .10) 0, rgba(0, 0, 0, .25) 100%)*/
+        }
+
+        .css-button .shine {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, .25)), color-stop(50%, rgba(255, 255, 255, .25)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, .25) 0, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, .25) 0, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background: -ms-linear-gradient(top, rgba(255, 255, 255, .25) 0, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, .25) 0, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40ffffff', endColorstr='#00ffffff', GradientType=0)
+        }
+
+        .css-button:hover .hover {
+            background: rgba(255, 255, 255, .15)
+        }
+
+        .css-button:active .active {
+            background: rgba(0, 0, 0, .15)
+        }
+
+        .css-button .gradient,
+        .css-button .shine,
+        .css-button .hover,
+        .css-button .active {
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important
+        }
+
+        .btn1 .text {
+            font-size: 160%;
+            color: #fff;
+            text-shadow: #7a7a7ad6 0 1px 0;
+            margin-top: -4px;
+        }
+
+        .btn1 .icon {
+            color: transparent;
+            text-shadow: none;
+        }
+
+        .btn1 .subtext {
+            font-size: 90%;
+            color: #fff;
+            font-weight: normal;
+            text-shadow: #256f3f 0 1px 0
+        }
+
+        .btn1 {
+            padding: 20px 55px;
+            border-color: #3eb4c6;
+            border-width: 1px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            background: #58c0d0;
+            box-shadow: inset 0 1px 0 0 rgba(149, 213, 139, 1);
+        }
+
+        .btn1 .gradient {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px
+        }
+
+        .btn1 .shine {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px
+        }
+
+        .btn1 .active {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px
+        }
+
+        .btn1 .hover {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px
+        }
+
+        .redButton {
+            background: #58c0d0;
+            box-shadow: inset 0 1px 0 0 #58c0d0;
+            min-width: 200px;
+        }
+
+        a {
+            color: inherit
+        }
+
+        a:visited {
+            color: inherit
+        }
+
+        a:hover {
+            color: #2a91ff
+        }
+
+        .sectionLinkTarget:hover {
+            color: inherit
+        }
+
+        .oddNumbered h2>a:hover,
+        .oddNumbered span>a:hover {
+            color: white;
+        }
+
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .personImage {
+            border-radius: 2px;
+            border: 3px solid white;
+            -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);
+            width: 75%;
+            max-width: 250px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr,
+        td {
+            border-bottom: 1px solid #808080F0;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        td:nth-child(1) {
+            padding-left: 10px;
+            padding-right: 15px;
+            min-width: 50px;
+        }
+
+        .aboutUsLogo {
+            min-width: 250px;
+            margin: 5px;
+            vertical-align: top;
+        }
+
+        .topnav {
+            display: none;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            color: #333132;
+            padding: 25px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav a:hover {
+            color: #333132;
+        }
+
+        #activeTopNav:hover {
+            color: #333132;
+        }
+
+        .resumeDate {
+            font-weight: bold;
+        }
+        
+        .contactInformation>.address {
+            display: block;
+            margin-top: 15px;
+        }
+        
+        .buttonIcon
+        {
+            float: left;
+            margin-left: -30px;
+            border-radius: 3px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            p,
+            span {
+                font-size: 125%;
+            }
+
+            table {
+                font-size: 125%;
+            }
+
+            h1 {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            h2,
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .page {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 10px;
+            }
+
+            .buttonContainer {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .contactInformation>span {
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .list_item {
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+
+            #nav {
+                display: none
+            }
+
+            .topnav {
+                display: block;
+            }
+        }
+    </style>
+
+    <script>
+        function protectEmail(start, end, displayText) {
+            if (displayText) {
+                document.write(displayText);
+            } else {
+                document.write(start + "@" + end);
+            }
+
+            var x = "//a[contains(@href, 'mailto:')]";
+            var y = document.evaluate(x, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+            for (i = 0; i < y.snapshotLength; i++) {
+                y.snapshotItem(i).href = "mailto:" + start + "@" + end;
+            }
+        }
+    </script>
+</head>
+
+<body itemscope itemtype="https://schema.org/Dentist">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="/" id="activeTopNav"><img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/medium/LogoPraxMail.jpg"/></a>
+        <div id="myLinks">
+            <a href="#location">Location</a>
+            <a href="#whoWeAre">Who We Are</a>
+            <a href="#whatWeDo">What We Do</a>
+            <a href="#hours">Hours</a>
+            <a href="#contactUs">Contact Us</a>
+            <a href="#emergencies">Emergencies</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        Menu ☰
+      </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <div id="nav">
+        <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/medium/LogoPraxMail.jpg" />
+        <a href="#location">Location</a>
+        <a href="#whoWeAre">Who We Are</a>
+        <a href="#whatWeDo">What We Do</a>
+        <a href="#hours">Hours</a>
+        <a href="#contactUs">Contact Us</a>
+        <a href="#emergencies">Emergencies</a>
+    </div>
+
+    <div class="container page oddNumbered">
+        <div class="list_item">
+            <h2>Dr. Med. Dent.</h2>
+            <h1 itemprop="name" style="font-size: 350%;">Roland Männchen</h1>
+            <h2>Kieferorthopädischen | Winterthur</h2>
+            <p class="spacedLines" itemprop="description">PhD, eidg. dipl. Zahnarzt SSO<br><span itemprop="medicalSpecialty">Fachzahnarzt für Kieferorthopädie (CH)</span></p>
+
+            <h2 class="spacedLines">Make An Appointment</h2>
+
+            <div class="buttonContainer">
+                <a href="tel:052 203 65 65" class="redButton btn1 css-button style-1">
+                <span class="text"><span class="buttonIcon" style="filter: grayscale(100%); border-radius: 3px; margin-left: -30px; float:left;">📞</span> <span itemprop="telephone">Call Now</span></span>
+                <span class="gradient"></span>
+                <span class="hover"></span>
+                <span class="active"></span>
+            </a>
+
+                <br>
+                <br>
+
+                <a href="mailto:" class="redButton btn1 css-button style-1">
+                <span class="text"><span class="buttonIcon" style="filter: grayscale(100%) brightness(60%);">✉️</span> <script>protectEmail("termine", "maennchen.ch", "Send Email")</script></span>
+                <span class="gradient"></span>
+                <span class="hover"></span>
+                <span class="active"></span>
+            </a>
+
+            </div>
+        </div>
+
+        <div class="list_item pageImage centered" style="width: 47%;">
+            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Roland Männchen">
+        </div>
+    </div>
+
+    <div class="page evenNumbered">
+        <div class="centered" style="width: 100%;">
+            <h1><a class="sectionLinkTarget" name="location">Our Location</a></h1>
+
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p style="font-size: 125%;">
+                    <a href="https://www.google.ch/maps/dir//Dr.+med.+dent.+Roland+M%C3%A4nnchen,+PhD+Fachzahnarzt+f%C3%BCr+Kieferorthop%C3%A4die+(CH),+Technikumstrasse+61,+8400+Winterthur,+Swiss/@47.4976705,8.7249301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479a999d87090ca3:0x4237e5757327912c!2m2!1d8.7271188!2d47.4976705">
+                        <span itemprop="streetAddress">Technikumstr. 61 8400</span>
+                        <span itemprop="addressLocality">Winterthur</span>,
+                        <span itemprop="addressCountry">Schweiz</span>
+                    </a>
+                </p>
+            </div>
+
+
+            <div class="centered">
+                <a href="https://www.google.ch/maps/dir//Dr.+med.+dent.+Roland+M%C3%A4nnchen,+PhD+Fachzahnarzt+f%C3%BCr+Kieferorthop%C3%A4die+(CH),+Technikumstrasse+61,+8400+Winterthur,+Swiss/@47.4976705,8.7249301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479a999d87090ca3:0x4237e5757327912c!2m2!1d8.7271188!2d47.4976705" class="redButton btn1 css-button style-1">
+                    <span class="text"><span class="buttonIcon">➤</span> Get Directions</span>
+                    <span class="gradient"></span>
+                    <span class="hover"></span>
+                    <span class="active"></span>
+                </a>
+            </div>
+
+            <br>
+
+            <div class="container">
+
+                <div class="list_item" style="width: 100%; padding-left: 5px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.6017842772485!2d8.724930115626753!3d47.49767047917751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999d87090ca3%3A0x4237e5757327912c!2sDr.%20med.%20dent.%20Roland%20M%C3%A4nnchen%2C%20PhD%20Fachzahnarzt%20f%C3%BCr%20Kieferorthop%C3%A4die%20(CH)!5e0!3m2!1sid!2sid!4v1568700101451!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 400px" allowfullscreen=""></iframe>
+                </div>
+            </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container page oddNumbered">
+        <div class="list_item centered" style="width: 100%;">
+            <h1><a class="sectionLinkTarget" name="hours">Opening Hours</a></h1>
+
+            <table style="width:100%; text-align: left;">
+                <tr>
+                    <td>Mon</td>
+                    <td>7:30 - 10:30</td>
+                    <td>11:15 - 13:45</td>
+                    <td>14:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Tue</td>
+                    <td>7:30 - 10:30</td>
+                    <td>11:15 - 13:45</td>
+                    <td>14:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Wed</td>
+                    <td>7:30 - 11:30</td>
+                    <td>12:30 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Thu</td>
+                    <td>7:30 - 12:00</td>
+                    <td>13:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Fri</td>
+                    <td>7:30 - 13:00</td>
+                </tr>
+            </table>
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Roland Männchen",
+                    "image": "resources/resized/medium/Portraits/Rolly.jpg",
+                    "openingHoursSpecification": [{
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "07:30",
+                            "closes": "10:30"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "11:15",
+                            "closes": "13:45"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "14:30",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Wednesday"
+                            ],
+                            "opens": "7:30",
+                            "closes": "11:30"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Wednesday"
+                            ],
+                            "opens": "12:30",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Thursday"
+                            ],
+                            "opens": "7:30",
+                            "closes": "12:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Thursday"
+                            ],
+                            "opens": "13:00",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Friday"
+                            ],
+                            "opens": "7:30",
+                            "closes": "13:00"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="page" style="background: url(resources/resized/medium/black-geo.jpg); background-size: cover; color: white;text-align: center;">
+        <h1><a class="sectionLinkTarget" name="whoWeAre">Who We Are</a></h1>
+
+        <div class="container">
+
+            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <img class="personImage" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Roland Männchen">
+
+                <h2><span itemprop="honorificPrefix">Dr. med. dent.</span><span itemprop="name">Roland Männchen, PhD</span></h2>
+
+                <h3>Ausbildung, Diplome & Titel</h3>
+
+                <ul>
+                    <li itemprop="alumniOf"><span class="resumeDate">1984 - 1990</span> Zahnmedizin-Studium in Zürich, Staatsexamen 1990 (Eidg. Dipl. Zahnarzt)</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">1990 - 1991</span> Assistenzarzt bei Dr. E. Müller, Zürich</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">1991 - 1992</span> Promotion an der Klinik für Kronen- und Brückenprothetik, ZZM, Universität Zürich (Dr. med. dent.)</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">1992 - 1994</span> Assistenzarzt bei Dr. A. Keller, Wil SG</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">1994 - 1997</span> Postgraduate-Ausbildung an der Klinik für Kieferorthopädie, ZZM, Universität Zürich</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">1998</span> Spezialist SSO für Kieferorthopädie</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">2003</span> Facharzt (CH) für Kieferorthopädie</li>
+                    <li itemprop="alumniOf"><span class="resumeDate">2010</span> PhD („Philosophy Doctor“) Universität Tampere, Finnland. Der Titel entspricht einer Habilitation und ermöglicht die Wahl als Professor an eine beliebige Universität weltweit.</li>
+                </ul>
+
+                </a>
+
+            </div>
+
+            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <img class="personImage" src="resources/resized/medium/Portraits/Martin.jpg" itemprop="image">
+                <h2><span itemprop="honorificPrefix">Dr. med. dent.</span> <span itemprop="name">Martin Meienhofe</span></h2>
+
+                <ul>
+                    <li itemprop="alumniOf">MSc Kieferorthopädie (A)</li>
+                </ul>
+            </div>
+
+            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <img class="personImage" src="resources/resized/medium/Portraits/Safete.jpg" itemprop="image">
+                <h2 itemprop="name">Safete Kerqeli</h2>
+                <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
+            </div>
+
+            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <img class="personImage" src="resources/resized/medium/Portraits/Ioli.jpg" itemprop="image">
+                <h2 itemprop="name">Iolanda Böni</h2>
+                <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container page evenNumbered centered">
+        <h1>Fachliche Aktivitäten & Mitgliedschaften</h1>
+
+        <ul>
+            <li>Fachzahnarzt für Kieferorthopädie (CH)</li>
+            <li itemprop="memberOf">Präsident der Spezialisierungskommission der SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)</li>
+            <li itemprop="memberOf">Mitglied der Angle Society of Europe</li>
+            <li itemprop="memberOf">Berater der Fachzeitschrift „American Journal of Orthodontics and Dento-facial Orthopedics“</li>
+            <li itemprop="memberOf">Gründer des FOC (Frunz Orthodontic Club of Romania)</li>
+        </ul>
+
+        <div>
+            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoASE.jpg">
+            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoSGK.jpg">
+            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoSSO.jpg">
+            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoVWZ.jpg">
+        </div>
+    </div>
+
+
+    <div class="container page oddNumbered">
+        <div class="list_item centered" style="width: 100%; max-width: 800px;">
+            <h1><a class="sectionLinkTarget" name="whatWeDo">What We Do</a></h1>
+
+            <ul>
+                <li>In unserer Praxis wird das gesamte Spektrum der modernen Kieferortho-pädie angeboten. Allerdings haben die Spangensysteme verschiedene Vor- und Nachteile, weswegen sie in unterschiedlichen Situationen zur Anwendung kommen. </li>
+                <li>Abnehmbare Spangen (Headgear, Monobloc, Lingualbogen, Lip-Bumper, Platten)</li>
+                <li>Festsitzende Spangen („Gartenhaag“ aussen / innen)</li>
+                <li>Skelettale Verankerung (Gaumenimplantat, Minischrauben), Piezocision</li>
+                <li>Oralchirurgische Eingriffe im Zusammenhang mit der Zahnstellungskorrektur</li>
+                <li>Aligner (sehr selten!)</li>
+                <li>Kombiniert kieferorthopädische-kieferchirurgische Therapie</li>
+                <li>Kombiniert kieferorthopädisch-prothetische Therapie</li>
+            </ul>
+
+            <img class="fullWidth personImage" style="max-width: 450px;" src="resources/resized/medium/OP1.jpg">
+        </div>
+    </div>
+
+    <div class="container page evenNumbered">
+        <div class="list_item centered" style="width: 100%;">
+            <h1><a class="sectionLinkTarget" name="emergencies">Emergencies</a></h1>
+
+            <h2>In case of emergency outside of office hours, contact:</h2>
+
+            <h2><a href="https://vwz.ch/page/notfall/">vwz.ch/page/notfall</a></h2>
+            <h2><a href="tel:0800 33 66 55">Call 0800 33 66 55</a></h2>
+
+            <a href="https://vwz.ch/page/notfall/"><img style="border-radius: 35%; width: 250px;" class="fullWidth" src="resources/resized/medium/vwz.jpg"></a>
+        </div>
+    </div>
+
+    <div class="page oddNumbered centered">
+        <h1 style="font-size: 225%;"><a class="sectionLinkTarget" name="contactUs">Contact Us</a></h1>
+
+        <div class="contactInformation">
+            <span>Email: <a href="mailto:"><script>protectEmail("termine", "maennchen.ch")</script></a></span>
+
+            <span>Phone: <a href="tel:052 203 65 65">052 203 65 65</a></span> <span> Fax: <a href="tel:052 203 65 66" itemprop="faxNumber">052 203 65 66</a></span>
+            
+            <span class="address"><a href="https://www.google.ch/maps/place/Dr.+med.+dent.+Roland+Männchen,+PhD+Fachzahnarzt+für+Kieferorthopädie+(CH)/@47.4976705,8.7249301,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999d87090ca3:0x4237e5757327912c!8m2!3d47.4976705!4d8.7271188">Technikumstr. 61 8400 Winterthur, Schweiz</a></span>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div class="page evenNumbered centered">
+        <p>&copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Roland Männchen</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
