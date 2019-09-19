@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Roland Männchen, Kieferorthopädischen, Winterthur</title>
     <meta name="description" content="Willkommen in der kieferorthopädischen Praxis Dr. R. Männchen, Winterthur" />
-    <meta name="keywords" content="winterthur, zahnspangen, kieferorthopäde, schweiz, zahnarzt" />
+    <meta name="keywords" content="winterthur, zahnspangen, kieferorthopäde, schweiz, zahnarzt, männchen, roland männchen" />
     <link rel="icon" href="resources/resized/medium/LogoPraxMail.jpg">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-
 
     <link rel="prefetch" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.6017842772485!2d8.724930115626753!3d47.49767047917751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999d87090ca3%3A0x4237e5757327912c!2sDr.%20med.%20dent.%20Roland%20M%C3%A4nnchen%2C%20PhD%20Fachzahnarzt%20f%C3%BCr%20Kieferorthop%C3%A4die%20(CH)!5e0!3m2!1sid!2sid!4v1568700101451!5m2!1sid!2sid">
 
@@ -20,7 +19,6 @@
             background-size: cover;
             background-attachment: fixed;
             font-family: 'Open Sans', sans-serif;
-            font-display: optional;
             color: #262626;
             margin: 0px;
             word-break: break-word;
@@ -62,7 +60,7 @@
 
         ol,
         ul {
-            text-align: left
+            text-align: left;
         }
 
         li {
@@ -113,7 +111,6 @@
         }
 
         .css-button.style-1 {
-            cursor: pointer;
             line-height: 1;
             text-align: center;
             text-decoration: none;
@@ -175,7 +172,6 @@
             font-size: 160%;
             color: #fff;
             text-shadow: #7a7a7ad6 0 1px 0;
-            margin-top: -4px;
         }
 
         .btn1 .icon {
@@ -191,7 +187,7 @@
         }
 
         .btn1 {
-            padding: 20px 55px;
+            padding: 20px 30px;
             border-color: #3eb4c6;
             border-width: 1px;
             -moz-border-radius: 3px;
@@ -228,7 +224,7 @@
         .redButton {
             background: #58c0d0;
             box-shadow: inset 0 1px 0 0 #58c0d0;
-            min-width: 200px;
+            min-width: 285px;
         }
 
         a {
@@ -285,7 +281,8 @@
         }
 
         .aboutUsLogo {
-            min-width: 250px;
+            max-width: 300px;
+            min-width: 250px;            
             margin: 5px;
             vertical-align: top;
         }
@@ -333,8 +330,11 @@
         .buttonIcon
         {
             float: left;
-            margin-left: -30px;
+            margin-left: -15px;
+            margin-right: 15px;
             border-radius: 3px;
+            margin-top: 3px;
+            width: 24px;
         }
 
         @media screen and (max-width: 1000px) {
@@ -388,31 +388,30 @@
             .topnav {
                 display: block;
             }
+            
+            .aboutUsLogo {
+                max-width: 250px;
+                min-width: 250px;            
+                margin: 5px;
+                vertical-align: top;
+            }
         }
     </style>
+    
+    <script>    
+        window.onload = function() {
+            var x = document.getElementById("copyright");
 
-    <script>
-        function protectEmail(start, end, displayText) {
-            if (displayText) {
-                document.write(displayText);
-            } else {
-                document.write(start + "@" + end);
-            }
-
-            var x = "//a[contains(@href, 'mailto:')]";
-            var y = document.evaluate(x, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-
-            for (i = 0; i < y.snapshotLength; i++) {
-                y.snapshotItem(i).href = "mailto:" + start + "@" + end;
-            }
-        }
-    </script>
+            x.innerHTML = "&copy; " + new Date().getFullYear();
+        };
+    </script> 
+    
 </head>
 
 <body itemscope itemtype="https://schema.org/Dentist">
     <!-- Top Navigation Menu -->
     <div class="topnav">
-        <a href="/" id="activeTopNav"><img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/medium/LogoPraxMail.jpg"/></a>
+        <a href="/" id="activeTopNav"><img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/medium/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/></a>
         <div id="myLinks">
             <a href="#standort">Standort</a>
             <a href="#ueberUns">Über Uns</a>
@@ -437,9 +436,8 @@
         }
     </script>
 
-
     <div id="nav">
-        <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/medium/LogoPraxMail.jpg" />
+        <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/medium/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
         <a href="#standort">Standort</a>
         <a href="#ueberUns">Über Uns</a>
         <a href="#wasWirTun">Was wir tun</a>
@@ -459,7 +457,8 @@
 
             <div class="buttonContainer">
                 <a href="tel:+41522036565" class="redButton btn1 css-button style-1">
-                <span class="text"><span class="buttonIcon" style="filter: grayscale(100%);">📞</span> <span>Rufen Sie uns an</span></span>
+                <img class="buttonIcon" src="resources/original/call-answer-white.png"/>
+                <span class="text">Rufen Sie uns an</span>
                 <span class="gradient"></span>
                 <span class="hover"></span>
                 <span class="active"></span></a>
@@ -467,8 +466,9 @@
                 <br>
                 <br>
 
-                <a href="mailto:" class="redButton btn1 css-button style-1">
-                <span class="text"><span class="buttonIcon" style="filter: grayscale(100%) brightness(60%);">✉</span> <span><script>protectEmail("termine", "maennchen.ch", "Senden Sie eine Email")</script></span></span>
+                <a href="mailto:termine@maennchen.ch" class="redButton btn1 css-button style-1">
+                <img class="buttonIcon" style="margin-right: 10px;" src="resources/original/mail-white-envelope-symbol.png"/>
+                <span class="text">Senden Sie eine Email</span>
                 <span class="gradient"></span>
                 <span class="hover"></span>
                 <span class="active"></span></a>
@@ -476,7 +476,7 @@
         </div>
 
         <div class="list_item pageImage centered" style="width: 47%;">
-            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Roland Männchen">
+            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
         </div>
     </div>
 
@@ -494,10 +494,10 @@
                 </p>
             </div>
 
-
             <div class="centered">
                 <a href="https://www.google.ch/maps/dir//Dr.+med.+dent.+Roland+M%C3%A4nnchen,+PhD+Fachzahnarzt+f%C3%BCr+Kieferorthop%C3%A4die+(CH),+Technikumstrasse+61,+8400+Winterthur,+Swiss/@47.4976705,8.7249301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479a999d87090ca3:0x4237e5757327912c!2m2!1d8.7271188!2d47.4976705" class="redButton btn1 css-button style-1">
-                    <span class="text"><span class="buttonIcon">➤</span> Wegbeschreibung</span>
+                    <span class="buttonIcon" style="color:white; font-size: 150%; margin-left: -10px; margin-right: 0px; margin-top: 1px;">➤</span> 
+                    <span class="text">Wegbeschreibung</span>
                     <span class="gradient"></span>
                     <span class="hover"></span>
                     <span class="active"></span>
@@ -507,13 +507,9 @@
             <br>
 
             <div class="container">
-
                 <div class="list_item" style="width: 100%; padding-left: 5px;">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.6017842772485!2d8.724930115626753!3d47.49767047917751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999d87090ca3%3A0x4237e5757327912c!2sDr.%20med.%20dent.%20Roland%20M%C3%A4nnchen%2C%20PhD%20Fachzahnarzt%20f%C3%BCr%20Kieferorthop%C3%A4die%20(CH)!5e0!3m2!1sid!2sid!4v1568700101451!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 400px" allowfullscreen=""></iframe>
                 </div>
-            </a>
-                </div>
-
             </div>
         </div>
     </div>
@@ -636,13 +632,13 @@
         <div class="container">
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Roland Männchen">
+                <img class="personImage" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
 
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span><span itemprop="name">Roland Männchen, PhD</span></h2>
 
                 <h3>Ausbildung, Diplome & Titel</h3>
 
-                <ul>
+                <ul style="list-style-type: none;">
                     <li itemprop="alumniOf"><span class="resumeDate">2010</span> PhD („Philosophy Doctor“) Universität Tampere, Finnland. Der Titel entspricht einer Habilitation und ermöglicht die Wahl als Professor an eine beliebige Universität weltweit.</li>
                     <li itemprop="alumniOf"><span class="resumeDate">2003</span> Facharzt (CH) für Kieferorthopädie</li>
                     <li itemprop="alumniOf"><span class="resumeDate">1998</span> Spezialist SSO für Kieferorthopädie</li>
@@ -658,22 +654,20 @@
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Martin.jpg" itemprop="image">
+                <img class="personImage" src="resources/resized/medium/Portraits/Martin.jpg" alt="Foto von Martin Meienhofe" title="Dr. med. dent. Martin Meienhofe" itemprop="image">
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span> <span itemprop="name">Martin Meienhofe</span></h2>
 
-                <ul>
-                    <li itemprop="alumniOf">MSc Kieferorthopädie (A)</li>
-                </ul>
+                <p itemprop="alumniOf">MSc Kieferorthopädie (A)</p>
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Safete.jpg" itemprop="image">
+                <img class="personImage" src="resources/resized/medium/Portraits/Safete.jpg" alt="Foto von Safete Kerqeli" title="Prophylaxeassistentin Safete Kerqeli" itemprop="image">
                 <h2 itemprop="name">Safete Kerqeli</h2>
                 <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Ioli.jpg" itemprop="image">
+                <img class="personImage" src="resources/resized/medium/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
                 <h2 itemprop="name">Iolanda Böni</h2>
                 <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
             </div>
@@ -692,13 +686,12 @@
         </ul>
 
         <div>
-            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoASE.jpg">
-            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoSGK.jpg">
-            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoSSO.jpg">
-            <img class="fullWidth aboutUsLogo" src="resources/resized/medium/Logos/LogoVWZ.jpg">
+            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoASE.jpg" alt="Logo von ASE (Angle Society of Europe)" title="ASE (Angle Society of Europe)">
+            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
+            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoSSO.jpg" alt="Logo von SSO (Schweizerische Zahnärzte-Gesellschaft)" title="SSO (Schweizerische Zahnärzte-Gesellschaft)">
+            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoVWZ.jpg" alt="Logo von VWZ (Vereinigung Winterthurer Zahnärzte)" title="VWZ (Vereinigung Winterthurer Zahnärzte)">
         </div>
     </div>
-
 
     <div class="container page oddNumbered">
         <div class="list_item centered" style="width: 100%; max-width: 800px;">
@@ -715,7 +708,7 @@
                 <li>Kombiniert kieferorthopädisch-prothetische Therapie</li>
             </ul>
 
-            <img class="fullWidth personImage" style="max-width: 450px;" src="resources/resized/medium/OP1.jpg">
+            <img class="fullWidth personImage" style="max-width: 450px;" src="resources/resized/medium/OP1.jpg" alt="Foto von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis">
         </div>
     </div>
 
@@ -728,7 +721,7 @@
             <h2><a href="https://vwz.ch/page/notfall/">VWZ Notfalldienst</a></h2>
             <h2><a href="tel:+41800336655">0800 33 66 55</a></h2>
 
-            <a href="https://vwz.ch/page/notfall/"><img style="border-radius: 35%; width: 250px;" class="fullWidth" src="resources/resized/medium/vwz.jpg" alt="VWZ Notfalldienst" /></a>
+            <a href="https://vwz.ch/page/notfall/"><img style="border-radius: 35%; width: 250px;" class="fullWidth" src="resources/resized/medium/vwz.jpg" alt="VWZ Notfalldienst" title="Kontakt im zahnärztlichen notfall" /></a>
         </div>
     </div>
 
@@ -736,7 +729,7 @@
         <h1 style="font-size: 225%;"><a class="sectionLinkTarget" name="kontakt">Kontakt</a></h1>
 
         <div class="contactInformation">
-            <span>Email: <a href="mailto:"><script>protectEmail("termine", "maennchen.ch")</script></a></span>
+            <span>Email: <a href="mailto:termine@maennchen.ch">termine@maennchen.ch</a></span>
 
             <span>Telefon: <a href="tel:+41522036565" itemprop="telephone">052 203 65 65</a></span> <span> Fax: <a href="tel:+41522036566" itemprop="faxNumber">052 203 65 66</a></span>
             
@@ -745,15 +738,13 @@
         <br>
         <br>
     </div>
-
+    
     <div class="page evenNumbered centered">
-        <p>&copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script> Roland Männchen</p>
+        <span id="copyright">&copy;</span><span> Roland Männchen</span>
         <br>
         <br>
         <br>
+        <div style="color: grey;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
         <br>
     </div>
 </body>
