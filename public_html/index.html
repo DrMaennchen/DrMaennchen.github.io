@@ -7,7 +7,7 @@
     <title>Roland Männchen, Kieferorthopädischen, Winterthur</title>
     <meta name="description" content="Willkommen in der kieferorthopädischen Praxis Dr. R. Männchen, Winterthur" />
     <meta name="keywords" content="winterthur, zahnspangen, kieferorthopäde, schweiz, zahnarzt, männchen, roland männchen" />
-    <link rel="icon" href="resources/resized/medium/LogoPraxMail.jpg">
+    <link rel="icon" href="resources/resized/small/LogoPraxMail.jpg">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
 
@@ -19,6 +19,7 @@
             background-size: cover;
             background-attachment: fixed;
             font-family: 'Open Sans', sans-serif;
+            font-display: optional;
             color: #262626;
             margin: 0px;
             word-break: break-word;
@@ -411,7 +412,12 @@
 <body itemscope itemtype="https://schema.org/Dentist">
     <!-- Top Navigation Menu -->
     <div class="topnav">
-        <a href="/" id="activeTopNav"><img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/medium/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/></a>
+        <a href="/" id="activeTopNav">
+        <picture>
+            <source media="(min-width: 650px)" srcset="resources/resized/medium/LogoPraxMail.jpg">
+            <img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/small/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
+        </picture>        
+        </a>
         <div id="myLinks">
             <a href="#standort">Standort</a>
             <a href="#ueberUns">Über Uns</a>
@@ -420,9 +426,7 @@
             <a href="#kontakt">Kontakt</a>
             <a href="#notfaelle">Notfälle</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        Menu ☰
-      </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">Menu ☰</a>
     </div>
 
     <script>
@@ -437,7 +441,11 @@
     </script>
 
     <div id="nav">
-        <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/medium/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
+        <picture>
+            <source media="(min-width: 650px)" srcset="resources/resized/medium/LogoPraxMail.jpg">
+            <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/small/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
+        </picture>        
+
         <a href="#standort">Standort</a>
         <a href="#ueberUns">Über Uns</a>
         <a href="#wasWirTun">Was wir tun</a>
@@ -476,7 +484,11 @@
         </div>
 
         <div class="list_item pageImage centered" style="width: 47%;">
-            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+        <picture>
+            <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Rolly.jpg">
+            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+        </picture>
+
         </div>
     </div>
 
@@ -519,120 +531,46 @@
             <h1><a class="sectionLinkTarget" name="oeffnungszeiten">Öffnungszeiten</a></h1>
 
             <table style="width:100%; text-align: left;">
-                <tr>
-                    <td>Mo.</td>
-                    <td>7:30 - 10:30</td>
-                    <td>11:15 - 13:45</td>
-                    <td>14:30 - 17:00</td>
+                <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                    <td itemprop="dayOfWeek" href="http://schema.org/Monday">Mo.</td>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="10:30:00">10:30</time></td>
+                    <td><time itemprop="opens" content="11:15:00">11:15</time> - <time itemprop="closes" content="13:45:00">13:45</time></td>
+                    <td><time itemprop="opens" content="14:30:00">14:30</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
                 </tr>
-                <tr>
-                    <td>Di.</td>
-                    <td>7:30 - 10:30</td>
-                    <td>11:15 - 13:45</td>
-                    <td>14:30 - 17:00</td>
+                <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                    <td itemprop="dayOfWeek" href="http://schema.org/Tuesday">Di.</td>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="10:30:00">10:30</time></td>
+                    <td><time itemprop="opens" content="11:15:00">11:15</time> - <time itemprop="closes" content="13:45:00">13:45</time></td>
+                    <td><time itemprop="opens" content="14:30:00">14:30</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
                 </tr>
-                <tr>
-                    <td>Mi.</td>
-                    <td>7:30 - 11:30</td>
-                    <td>12:30 - 17:00</td>
+                <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                    <td itemprop="dayOfWeek" href="http://schema.org/Wednesday">Mi.</td>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="11:30:00">11:30</time></td>
+                    <td><time itemprop="opens" content="12:30:00">12:30</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
                 </tr>
-                <tr>
-                    <td>Do.</td>
-                    <td>7:30 - 12:00</td>
-                    <td>13:00 - 17:00</td>
+                <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                    <td itemprop="dayOfWeek" href="http://schema.org/Thursday">Do.</td>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="12:00:00">12:00</time></td>
+                    <td><time itemprop="opens" content="13:00:00">13:00</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
                 </tr>
-                <tr>
-                    <td>Fr.</td>
-                    <td>7:30 - 13:00</td>
+                <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                    <td itemprop="dayOfWeek" href="http://schema.org/Friday">Fr.</td>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="13:00:00">13:00</time></td>
                 </tr>
             </table>
-
-            <script type="application/ld+json">
-                {
-                    "@context": "http://schema.org",
-                    "@type": "LocalBusiness",
-                    "name": "Roland Männchen",
-                    "image": "resources/resized/medium/Portraits/Rolly.jpg",
-                    "openingHoursSpecification": [{
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday"
-                            ],
-                            "opens": "07:30",
-                            "closes": "10:30"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday"
-                            ],
-                            "opens": "11:15",
-                            "closes": "13:45"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday"
-                            ],
-                            "opens": "14:30",
-                            "closes": "17:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Wednesday"
-                            ],
-                            "opens": "7:30",
-                            "closes": "11:30"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Wednesday"
-                            ],
-                            "opens": "12:30",
-                            "closes": "17:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Thursday"
-                            ],
-                            "opens": "7:30",
-                            "closes": "12:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Thursday"
-                            ],
-                            "opens": "13:00",
-                            "closes": "17:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Friday"
-                            ],
-                            "opens": "7:30",
-                            "closes": "13:00"
-                        }
-                    ]
-                }
-            </script>
         </div>
     </div>
 
-    <div class="page" style="background: url(resources/resized/medium/black-geo.jpg); background-size: cover; color: white;text-align: center;">
+    <div class="page" style="background: url(resources/resized/small/black-geo.jpg); background-size: cover; color: white;text-align: center;">
         <h1><a class="sectionLinkTarget" name="ueberUns">Über Uns</a></h1>
 
         <div class="container">
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Rolly.jpg">
+                    <img class="personImage" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+                </picture>
 
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span><span itemprop="name">Roland Männchen, PhD</span></h2>
 
@@ -654,20 +592,32 @@
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Martin.jpg" alt="Foto von Martin Meienhofe" title="Dr. med. dent. Martin Meienhofe" itemprop="image">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Martin.jpg">
+                    <img class="personImage" src="resources/resized/small/Portraits/Martin.jpg" alt="Foto von Martin Meienhofe" title="Dr. med. dent. Martin Meienhofe" itemprop="image">
+                </picture>
+
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span> <span itemprop="name">Martin Meienhofe</span></h2>
 
                 <p itemprop="alumniOf">MSc Kieferorthopädie (A)</p>
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Safete.jpg" alt="Foto von Safete Kerqeli" title="Prophylaxeassistentin Safete Kerqeli" itemprop="image">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Safete.jpg">
+                    <img class="personImage" src="resources/resized/small/Portraits/Safete.jpg" alt="Foto von Safete Kerqeli" title="Prophylaxeassistentin Safete Kerqeli" itemprop="image">
+                </picture>
+
                 <h2 itemprop="name">Safete Kerqeli</h2>
                 <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <img class="personImage" src="resources/resized/medium/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Ioli.jpg">
+                    <img class="personImage" src="resources/resized/small/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
+                </picture>
+
                 <h2 itemprop="name">Iolanda Böni</h2>
                 <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
             </div>
@@ -686,10 +636,25 @@
         </ul>
 
         <div>
-            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoASE.jpg" alt="Logo von ASE (Angle Society of Europe)" title="ASE (Angle Society of Europe)">
-            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
-            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoSSO.jpg" alt="Logo von SSO (Schweizerische Zahnärzte-Gesellschaft)" title="SSO (Schweizerische Zahnärzte-Gesellschaft)">
-            <img class="aboutUsLogo" src="resources/resized/medium/Logos/LogoVWZ.jpg" alt="Logo von VWZ (Vereinigung Winterthurer Zahnärzte)" title="VWZ (Vereinigung Winterthurer Zahnärzte)">
+            <picture>
+                <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoASE.jpg">
+                <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoASE.jpg" alt="Logo von ASE (Angle Society of Europe)" title="ASE (Angle Society of Europe)">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSGK.jpg">
+                <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSSO.jpg">
+                <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSSO.jpg" alt="Logo von SSO (Schweizerische Zahnärzte-Gesellschaft)" title="SSO (Schweizerische Zahnärzte-Gesellschaft)">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoVWZ.jpg">
+                <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoVWZ.jpg" alt="Logo von VWZ (Vereinigung Winterthurer Zahnärzte)" title="VWZ (Vereinigung Winterthurer Zahnärzte)">
+            </picture>
         </div>
     </div>
 
@@ -708,7 +673,10 @@
                 <li>Kombiniert kieferorthopädisch-prothetische Therapie</li>
             </ul>
 
-            <img class="fullWidth personImage" style="max-width: 450px;" src="resources/resized/medium/OP1.jpg" alt="Foto von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis">
+            <picture>
+                <source media="(min-width: 650px)" srcset="resources/resized/medium/OP1.jpg">
+                <img class="fullWidth personImage" style="max-width: 450px;" src="resources/resized/small/OP1.jpg" alt="Foto von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis">
+            </picture>
         </div>
     </div>
 
@@ -721,7 +689,13 @@
             <h2><a href="https://vwz.ch/page/notfall/">VWZ Notfalldienst</a></h2>
             <h2><a href="tel:+41800336655">0800 33 66 55</a></h2>
 
-            <a href="https://vwz.ch/page/notfall/"><img style="border-radius: 35%; width: 250px;" class="fullWidth" src="resources/resized/medium/vwz.jpg" alt="VWZ Notfalldienst" title="Kontakt im zahnärztlichen notfall" /></a>
+            <a href="https://vwz.ch/page/notfall/">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/vwz.jpg">
+                    <img style="border-radius: 35%; width: 250px;" class="fullWidth" src="resources/resized/small/vwz.jpg" alt="VWZ Notfalldienst" title="Kontakt im zahnärztlichen notfall" />
+                </picture>
+
+            </a>
         </div>
     </div>
 
@@ -731,7 +705,7 @@
         <div class="contactInformation">
             <span>Email: <a href="mailto:termine@maennchen.ch">termine@maennchen.ch</a></span>
 
-            <span>Telefon: <a href="tel:+41522036565" itemprop="telephone">052 203 65 65</a></span> <span> Fax: <a href="tel:+41522036566" itemprop="faxNumber">052 203 65 66</a></span>
+            <span>Telefon: <a href="tel:+41522036565" itemprop="telephone" content="052 203 65 65">052 203 65 65</a></span> <span> Fax: <a href="tel:+41522036566" itemprop="faxNumber">052 203 65 66</a></span>
             
             <span class="address"><a href="https://www.google.ch/maps/place/Dr.+med.+dent.+Roland+Männchen,+PhD+Fachzahnarzt+für+Kieferorthopädie+(CH)/@47.4976705,8.7249301,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999d87090ca3:0x4237e5757327912c!8m2!3d47.4976705!4d8.7271188">Technikumstr. 61, 8400 Winterthur, Schweiz</a></span>
         </div>
