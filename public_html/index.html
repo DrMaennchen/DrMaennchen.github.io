@@ -111,6 +111,11 @@
             max-width: 600px;
         }
 
+        .innerContainer {
+            width: 100%;
+            max-width: 900px;
+        }
+
         .css-button.style-1 {
             line-height: 1;
             text-align: center;
@@ -283,7 +288,7 @@
 
         .aboutUsLogo {
             max-width: 300px;
-            min-width: 250px;            
+            min-width: 250px;
             margin: 5px;
             vertical-align: top;
         }
@@ -322,12 +327,12 @@
         .resumeDate {
             font-weight: bold;
         }
-        
+
         .contactInformation>.address {
             display: block;
             margin-top: 15px;
         }
-        
+
         .buttonIcon
         {
             float: left;
@@ -389,24 +394,24 @@
             .topnav {
                 display: block;
             }
-            
+
             .aboutUsLogo {
                 max-width: 250px;
-                min-width: 250px;            
+                min-width: 250px;
                 margin: 5px;
                 vertical-align: top;
             }
         }
     </style>
-    
-    <script>    
+
+    <script>
         window.onload = function() {
             var x = document.getElementById("copyright");
 
             x.innerHTML = "&copy; " + new Date().getFullYear();
         };
-    </script> 
-    
+    </script>
+
 </head>
 
 <body itemscope itemtype="https://schema.org/Dentist">
@@ -416,7 +421,7 @@
         <picture>
             <source media="(min-width: 650px)" srcset="resources/resized/medium/LogoPraxMail.jpg">
             <img style="border-radius: 10px; width: 50px; margin-left: 5px; margin-top: -5px;" src="resources/resized/small/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
-        </picture>        
+        </picture>
         </a>
         <div id="myLinks">
             <a href="#standort">Standort</a>
@@ -444,7 +449,7 @@
         <picture>
             <source media="(min-width: 650px)" srcset="resources/resized/medium/LogoPraxMail.jpg">
             <img style="border-radius: 10px; width: 75px; float: left; margin-left: 10px; margin-top: -10px;" src="resources/resized/small/LogoPraxMail.jpg" alt="Logo von Roland Männchens Zahnarztpraxis" title="Roland Männchens Zahnarztpraxis"/>
-        </picture>        
+        </picture>
 
         <a href="#standort">Standort</a>
         <a href="#ueberUns">Über Uns</a>
@@ -508,7 +513,7 @@
 
             <div class="centered">
                 <a href="https://www.google.ch/maps/dir//Dr.+med.+dent.+Roland+M%C3%A4nnchen,+PhD+Fachzahnarzt+f%C3%BCr+Kieferorthop%C3%A4die+(CH),+Technikumstrasse+61,+8400+Winterthur,+Swiss/@47.4976705,8.7249301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479a999d87090ca3:0x4237e5757327912c!2m2!1d8.7271188!2d47.4976705" class="redButton btn1 css-button style-1">
-                    <span class="buttonIcon" style="color:white; font-size: 150%; margin-left: -10px; margin-right: 0px; margin-top: 1px;">➤</span> 
+                    <span class="buttonIcon" style="color:white; font-size: 150%; margin-left: -10px; margin-right: 0px; margin-top: 1px;">➤</span>
                     <span class="text">Wegbeschreibung</span>
                     <span class="gradient"></span>
                     <span class="hover"></span>
@@ -565,7 +570,6 @@
         <h1><a class="sectionLinkTarget" name="ueberUns">Über Uns</a></h1>
 
         <div class="container">
-
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
                 <picture>
                     <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Rolly.jpg">
@@ -573,22 +577,6 @@
                 </picture>
 
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span> <span itemprop="name">Roland Männchen, PhD</span></h2>
-
-                <h3>Ausbildung, Diplome & Titel</h3>
-
-                <ul style="list-style-type: none;">
-                    <li itemprop="alumniOf"><span class="resumeDate">2010</span> PhD („Philosophy Doctor“) Universität Tampere, Finnland. Der Titel entspricht einer Habilitation und ermöglicht die Wahl als Professor an eine beliebige Universität weltweit.</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">2003</span> Facharzt (CH) für Kieferorthopädie</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1998</span> Spezialist SSO für Kieferorthopädie</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1994 - 1997</span> Postgraduate-Ausbildung an der Klinik für Kieferorthopädie, ZZM, Universität Zürich</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1992 - 1994</span> Assistenzarzt bei Dr. A. Keller, Wil SG</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1991 - 1992</span> Promotion an der Klinik für Kronen- und Brückenprothetik, ZZM, Universität Zürich (Dr. med. dent.)</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1990 - 1991</span> Assistenzarzt bei Dr. E. Müller, Zürich</li>
-                    <li itemprop="alumniOf"><span class="resumeDate">1984 - 1990</span> Zahnmedizin-Studium in Zürich, Staatsexamen 1990 (Eidg. Dipl. Zahnarzt)</li>
-                </ul>
-
-                </a>
-
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
@@ -601,66 +589,84 @@
 
                 <p itemprop="alumniOf">MSc Kieferorthopädie (A)</p>
             </div>
+        </div>
 
-            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Safete.jpg">
-                    <img class="personImage" src="resources/resized/small/Portraits/Safete.jpg" alt="Foto von Safete Kerqeli" title="Prophylaxeassistentin Safete Kerqeli" itemprop="image">
-                </picture>
+            <div class="container">
+                <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Safete.jpg">
+                        <img class="personImage" src="resources/resized/small/Portraits/Safete.jpg" alt="Foto von Safete Kerqeli" title="Prophylaxeassistentin Safete Kerqeli" itemprop="image">
+                    </picture>
 
-                <h2 itemprop="name">Safete Kerqeli</h2>
-                <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
-            </div>
+                    <h2 itemprop="name">Safete Kerqeli</h2>
+                    <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
+                </div>
 
-            <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Ioli.jpg">
-                    <img class="personImage" src="resources/resized/small/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
-                </picture>
+                <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Ioli.jpg">
+                        <img class="personImage" src="resources/resized/small/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
+                    </picture>
 
-                <h2 itemprop="name">Iolanda Böni</h2>
-                <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
+                    <h2 itemprop="name">Iolanda Böni</h2>
+                    <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container page evenNumbered centered">
-        <h1>Fachliche Aktivitäten & Mitgliedschaften</h1>
+    <div class="page evenNumbered">
+        <div class="innerContainer centered">
+            <h1>Fachliche Aktivitäten & Mitgliedschaften</h1>
 
-        <ul>
-            <li>Fachzahnarzt für Kieferorthopädie (CH)</li>
-            <li itemprop="memberOf">Präsident der Spezialisierungskommission der SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)</li>
-            <li itemprop="memberOf">Mitglied der <a href="https://www.angle-society.com/">Angle Society of Europe</a></li>
-            <li itemprop="memberOf">Berater der <a href="https://www.ajodo.org/">Fachzeitschrift „American Journal of Orthodontics and Dentofacial Orthopedics“</a></li>
-            <li itemprop="memberOf">Gründer des FOC (Frunz Orthodontic Club of Romania)</li>
-        </ul>
+            <ul>
+                <li>Fachzahnarzt für Kieferorthopädie (CH)</li>
+                <li itemprop="memberOf">Präsident der Spezialisierungskommission der SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)</li>
+                <li itemprop="memberOf">Mitglied der <a href="https://www.angle-society.com/">Angle Society of Europe</a></li>
+                <li itemprop="memberOf">Berater der <a href="https://www.ajodo.org/">Fachzeitschrift „American Journal of Orthodontics and Dentofacial Orthopedics“</a></li>
+                <li itemprop="memberOf">Gründer des FOC (Frunz Orthodontic Club of Romania)</li>
+            </ul>
 
-        <div>
-            <a href="https://www.angle-society.com/">
+                    <div>
+                <a href="https://www.angle-society.com/">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoASE.jpg">
+                        <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoASE.jpg" alt="Logo von ASE (Angle Society of Europe)" title="ASE (Angle Society of Europe)">
+                    </picture>
+                </a>
+
                 <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoASE.jpg">
-                    <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoASE.jpg" alt="Logo von ASE (Angle Society of Europe)" title="ASE (Angle Society of Europe)">
+                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSGK.jpg">
+                    <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
                 </picture>
-            </a>
 
-            <picture>
-                <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSGK.jpg">
-                <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
-            </picture>
+                <a href="https://www.sso.ch/">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSSO.jpg">
+                        <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSSO.jpg" alt="Logo von SSO (Schweizerische Zahnärzte-Gesellschaft)" title="SSO (Schweizerische Zahnärzte-Gesellschaft)">
+                    </picture>
+                </a>
 
-            <a href="https://www.sso.ch/">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSSO.jpg">
-                    <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSSO.jpg" alt="Logo von SSO (Schweizerische Zahnärzte-Gesellschaft)" title="SSO (Schweizerische Zahnärzte-Gesellschaft)">
-                </picture>
-            </a>
+                <a href="https://vwz.ch/">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoVWZ.jpg">
+                        <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoVWZ.jpg" alt="Logo von VWZ (Vereinigung Winterthurer Zahnärzte)" title="VWZ (Vereinigung Winterthurer Zahnärzte)">
+                    </picture>
+                </a>
+            </div>
 
-            <a href="https://vwz.ch/">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoVWZ.jpg">
-                    <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoVWZ.jpg" alt="Logo von VWZ (Vereinigung Winterthurer Zahnärzte)" title="VWZ (Vereinigung Winterthurer Zahnärzte)">
-                </picture>
-            </a>
+            <h1>Ausbildung, Diplome & Titel</h1>
+
+            <ul style="list-style-type: none;">
+                <li itemprop="alumniOf"><span class="resumeDate">2010</span> PhD („Philosophy Doctor“) Universität Tampere, Finnland. Der Titel entspricht einer Habilitation und ermöglicht die Wahl als Professor an eine beliebige Universität weltweit.</li>
+                <li itemprop="alumniOf"><span class="resumeDate">2003</span> Facharzt (CH) für Kieferorthopädie</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1998</span> Spezialist SSO für Kieferorthopädie</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1994 - 1997</span> Postgraduate-Ausbildung an der Klinik für Kieferorthopädie, ZZM, Universität Zürich</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1992 - 1994</span> Assistenzarzt bei Dr. A. Keller, Wil SG</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1991 - 1992</span> Promotion an der Klinik für Kronen- und Brückenprothetik, ZZM, Universität Zürich (Dr. med. dent.)</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1990 - 1991</span> Assistenzarzt bei Dr. E. Müller, Zürich</li>
+                <li itemprop="alumniOf"><span class="resumeDate">1984 - 1990</span> Zahnmedizin-Studium in Zürich, Staatsexamen 1990 (Eidg. Dipl. Zahnarzt)</li>
+            </ul>
         </div>
     </div>
 
@@ -712,13 +718,13 @@
             <span>Email: <a href="mailto:termine@maennchen.ch">termine@maennchen.ch</a></span>
 
             <span>Telefon: <a href="tel:+41522036565" itemprop="telephone" content="052 203 65 65">052 203 65 65</a></span> <span> Fax: <a href="tel:+41522036566" itemprop="faxNumber">052 203 65 66</a></span>
-            
+
             <span class="address"><a href="https://www.google.ch/maps/place/Dr.+med.+dent.+Roland+Männchen,+PhD+Fachzahnarzt+für+Kieferorthopädie+(CH)/@47.4976705,8.7249301,17z/data=!3m1!4b1!4m5!3m4!1s0x479a999d87090ca3:0x4237e5757327912c!8m2!3d47.4976705!4d8.7271188">Technikumstr. 61, 8400 Winterthur, Schweiz</a></span>
         </div>
         <br>
         <br>
     </div>
-    
+
     <div class="page evenNumbered centered">
         <span id="copyright">&copy;</span><span> Roland Männchen</span>
         <br>
