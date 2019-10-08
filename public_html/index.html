@@ -27,7 +27,7 @@
 
         h1 {
             font-family: 'Open Sans', sans-serif;
-            font-size: 275%;
+            font-size: 200%;
         }
 
         img {
@@ -230,7 +230,9 @@
         .redButton {
             background: #58c0d0;
             box-shadow: inset 0 1px 0 0 #58c0d0;
-            min-width: 285px;
+            min-width: 300px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         a {
@@ -426,7 +428,7 @@
         <div id="myLinks">
             <a href="#standort">Standort</a>
             <a href="#ueberUns">Über Uns</a>
-            <a href="#wasWirTun">Was wir tun</a>
+            <a href="#leistungsangebot">Leistungsangebot</a>
             <a href="#oeffnungszeiten">Öffnungszeiten</a>
             <a href="#kontakt">Kontakt</a>
             <a href="#notfaelle">Notfälle</a>
@@ -453,7 +455,7 @@
 
         <a href="#standort">Standort</a>
         <a href="#ueberUns">Über Uns</a>
-        <a href="#wasWirTun">Was wir tun</a>
+        <a href="#leistungsangebot">Leistungsangebot</a>
         <a href="#oeffnungszeiten">Öffnungszeiten</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#notfaelle">Notfälle</a>
@@ -461,7 +463,7 @@
 
     <div class="container page oddNumbered">
         <div class="list_item">
-            <h2>Dr. Med. Dent.</h2>
+            <h2>Dr. med. dent.</h2>
             <h1 itemprop="name" style="font-size: 350%;">Roland Männchen</h1>
             <h2>Kieferorthopädie | Winterthur</h2>
             <p class="spacedLines" itemprop="description">PhD, eidg. dipl. Zahnarzt SSO<br><span itemprop="medicalSpecialty">Fachzahnarzt für Kieferorthopädie (CH)</span></p>
@@ -491,7 +493,7 @@
         <div class="list_item pageImage centered" style="width: 47%;">
         <picture>
             <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Rolly.jpg">
-            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+            <img style="max-width: 300px; border-radius: 2px; border: 3px solid white; -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25); box-shadow: 0 0 5px 2px rgba(0, 0, 0, .25);" class="fullWidth" itemprop="image" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. med. dent. Roland Männchen">
         </picture>
 
         </div>
@@ -514,7 +516,7 @@
             <div class="centered">
                 <a href="https://www.google.ch/maps/dir//Dr.+med.+dent.+Roland+M%C3%A4nnchen,+PhD+Fachzahnarzt+f%C3%BCr+Kieferorthop%C3%A4die+(CH),+Technikumstrasse+61,+8400+Winterthur,+Swiss/@47.4976705,8.7249301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479a999d87090ca3:0x4237e5757327912c!2m2!1d8.7271188!2d47.4976705" class="redButton btn1 css-button style-1">
                     <span class="buttonIcon" style="color:white; font-size: 150%; margin-left: -10px; margin-right: 0px; margin-top: 1px;">➤</span>
-                    <span class="text">Wegbeschreibung</span>
+                    <span class="text">Weg&shy;be&shy;schrei&shy;bung</span>
                     <span class="gradient"></span>
                     <span class="hover"></span>
                     <span class="active"></span>
@@ -555,9 +557,10 @@
                 </tr>
                 <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
                     <td itemprop="dayOfWeek" href="http://schema.org/Thursday">Do.</td>
-                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="12:00:00">12:00</time></td>
-                    <td><time itemprop="opens" content="13:00:00">13:00</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
-                </tr>
+                    <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="10:30:00">10:30</time></td>
+                    <td><time itemprop="opens" content="11:15:00">11:15</time> - <time itemprop="closes" content="13:45:00">13:45</time></td>
+                    <td><time itemprop="opens" content="14:30:00">14:30</time> - <time itemprop="closes" content="17:00:00">17:00</time></td>
+               </tr>
                 <tr itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
                     <td itemprop="dayOfWeek" href="http://schema.org/Friday">Fr.</td>
                     <td><time itemprop="opens" content="07:30:00">7:30</time> - <time itemprop="closes" content="13:00:00">13:00</time></td>
@@ -573,10 +576,12 @@
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
                 <picture>
                     <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Rolly.jpg">
-                    <img class="personImage" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. Med. Dent. Roland Männchen">
+                    <img class="personImage" src="resources/resized/small/Portraits/Rolly.jpg" alt="Foto von Roland Männchen" title="Dr. med. dent. Roland Männchen">
                 </picture>
 
                 <h2><span itemprop="honorificPrefix">Dr. med. dent.</span> <span itemprop="name">Roland Männchen, PhD</span></h2>
+
+                <p itemprop="alumniOf">Fachzahnarzt für Kieferorthopädie (CH)</p>
             </div>
 
             <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
@@ -599,17 +604,17 @@
                     </picture>
 
                     <h2 itemprop="name">Safete Kerqeli</h2>
-                    <h3 itemprop="jobTitle">Prophylaxeassistentin</h3>
+                    <p itemprop="jobTitle">Eidg. dipl. Prophylaxeassistentin</p>
                 </div>
 
                 <div class="list_item" itemprop="employee" itemscope itemtype="http://schema.org/Person">
                     <picture>
                         <source media="(min-width: 650px)" srcset="resources/resized/medium/Portraits/Ioli.jpg">
-                        <img class="personImage" src="resources/resized/small/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="Dentalassistentin Iolanda Böni" itemprop="image">
+                        <img class="personImage" src="resources/resized/small/Portraits/Ioli.jpg" alt="Foto von Iolanda Böni" title="dentalassistentin Iolanda Böni" itemprop="image">
                     </picture>
 
                     <h2 itemprop="name">Iolanda Böni</h2>
-                    <h3 itemprop="jobTitle">Eidg. dipl. Dentalassistentin</h3>
+                    <p itemprop="jobTitle">Eidg. dipl. dentalassistentin</p>
                 </div>
             </div>
         </div>
@@ -617,7 +622,7 @@
 
     <div class="page evenNumbered">
         <div class="innerContainer centered">
-            <h1>Fachliche Aktivitäten & Mitgliedschaften</h1>
+            <h1>Fachliche Aktivitäten & Mitgliedschaften Dr. Männchen</h1>
 
             <ul>
                 <li>Fachzahnarzt für Kieferorthopädie (CH)</li>
@@ -627,7 +632,7 @@
                 <li itemprop="memberOf">Gründer des FOC (Frunz Orthodontic Club of Romania)</li>
             </ul>
 
-                    <div>
+            <div>
                 <a href="https://www.angle-society.com/">
                     <picture>
                         <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoASE.jpg">
@@ -635,10 +640,12 @@
                     </picture>
                 </a>
 
-                <picture>
-                    <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSGK.jpg">
-                    <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
-                </picture>
+                <a href="https://swissortho.ch/">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="resources/resized/medium/Logos/LogoSGK.jpg">
+                        <img class="aboutUsLogo" src="resources/resized/small/Logos/LogoSGK.jpg" alt="Logo von SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)" title="SGK (Schweizerische Prüfungskommission für Fachzahnärzte in Kieferorthopädie)">
+                    </picture>
+                </a>
 
                 <a href="https://www.sso.ch/">
                     <picture>
@@ -655,7 +662,7 @@
                 </a>
             </div>
 
-            <h1>Ausbildung, Diplome & Titel</h1>
+            <h1>Ausbildung, Diplome & Titel Dr. Männchen</h1>
 
             <ul style="list-style-type: none;">
                 <li itemprop="alumniOf"><span class="resumeDate">2010</span> PhD („Philosophy Doctor“) Universität Tampere, Finnland. Der Titel entspricht einer Habilitation und ermöglicht die Wahl als Professor an eine beliebige Universität weltweit.</li>
@@ -667,15 +674,51 @@
                 <li itemprop="alumniOf"><span class="resumeDate">1990 - 1991</span> Assistenzarzt bei Dr. E. Müller, Zürich</li>
                 <li itemprop="alumniOf"><span class="resumeDate">1984 - 1990</span> Zahnmedizin-Studium in Zürich, Staatsexamen 1990 (Eidg. Dipl. Zahnarzt)</li>
             </ul>
+
+            <h1>Lehr- &amp; Berufstätigkeit Dr. Männchen</h1>
+
+            <ul style="list-style-type: none;">
+                <li itemprop="alumniOf">
+                    <span class="resumeDate">Seit 2011</span>
+                    CSO-Kurse für Kieferorthopäden und Allgemeinzahnärzte
+                </li>
+                <li itemprop="alumniOf">
+                    <span class="resumeDate">Seit 2008</span>
+                    Privatpraxis im Eulachhaus, Winterthur
+                </li>
+                <li itemprop="alumniOf">
+                    <span class="resumeDate">2001 - 2007</span>
+                    Privatpraxis im Stadttor, Winterthur
+                </li>
+                <li itemprop="alumniOf">
+                    <span class="resumeDate">2001 - 2010</span>
+                    Externer Instruktor an der Klinik für Kieferorthopädie, Zürich
+                </li>
+                <li itemprop="alumniOf">
+                    <span class="resumeDate">1997 - 2000</span>
+                    Oberarzt und Lehrbeauftragter an der Klinik für Kieferorthopädie, ZZM, Universität Zürich
+                </li>
+            </ul>
+
+            <h1>Wissenschaftliche Tätigkeit Dr. Männchen</h1>
+
+            <ul>
+                <li>Universität Zürich</li>
+                <li>Zürcher Hochschule für angewandte Wissenschaften Winterthur („Tech“)</li>
+                <li>REGEA-Institut für regenerative medizin in Tampere, Finnland</li>
+                <li>Diverse Publikationen in internationalen Fachzeitschriften</li>
+                <li>Veröffentlichung einer Biomechanik-CD</li>
+                <li>Vorträge im In- und Ausland</li>
+            </ul>
         </div>
     </div>
 
     <div class="container page oddNumbered">
         <div class="list_item centered" style="width: 100%; max-width: 800px;">
-            <h1><a class="sectionLinkTarget" name="wasWirTun">Was wir tun</a></h1>
+            <h1><a class="sectionLinkTarget" name="leistungsangebot">Leistungsangebot</a></h1>
 
             <ul>
-                <li>In unserer Praxis wird das gesamte Spektrum der modernen Kieferortho-pädie angeboten. Allerdings haben die Spangensysteme verschiedene Vor- und Nachteile, weswegen sie in unterschiedlichen Situationen zur Anwendung kommen. </li>
+                <li>In unserer Praxis wird das gesamte Spektrum der modernen Kieferorthopädie angeboten. Allerdings haben die Spangensysteme verschiedene Vor- und Nachteile, weswegen sie in unterschiedlichen Situationen zur Anwendung kommen. </li>
                 <li>Abnehmbare Spangen (Headgear, Monobloc, Lingualbogen, Lip-Bumper, Platten)</li>
                 <li>Festsitzende Spangen („Gartenhaag“ aussen / innen)</li>
                 <li>Skelettale Verankerung (Gaumenimplantat, Minischrauben), Piezocision</li>
