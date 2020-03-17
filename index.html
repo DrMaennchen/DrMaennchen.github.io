@@ -99,6 +99,10 @@
             background: radial-gradient(circle farthest-side at center bottom, orange, red 125%);
         }
 
+        .emergencyTwo {
+            background: radial-gradient(circle farthest-side at center bottom, orange, yellow 125%);
+        }
+
         .list_item {
             width: 47%;
             height: auto;
@@ -263,8 +267,6 @@
         }
 
         .centered {
-            margin-left: auto;
-            margin-right: auto;
             text-align: center;
         }
 
@@ -409,6 +411,27 @@
                 margin: 5px;
                 vertical-align: top;
             }
+
+            .hide-small {
+                display: none;
+            }
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 
@@ -484,7 +507,7 @@
             </p>
 
             <p>
-                Am Abend des 16. März 2020 hat nun die Gesundheitsdirektion des Kantons Zürich die Weisung verfügt, dass „nicht zwingende und Wahlbehandlungen ausgesetzt werden müssen“. Somit sind ab sofort alle Termine abgesagt und es werden nur noch Notfälle behandelt.
+                Am Abend des 16. März 2020 hat nun die Gesundheitsdirektion des Kantons Zürich die Weisung verfügt, dass <q cite="https://www.sso.ch/fileadmin/upload_sso/0_Home/2_Newsrollbox/0_PDF/Covid-19-Positionspapier.pdf">nicht zwingende und Wahlbehandlungen ausgesetzt werden müssen</q>. Somit sind ab sofort alle Termine abgesagt und es werden nur noch Notfälle behandelt.
             </p>
 
             <p>
@@ -502,6 +525,26 @@
             <p><strong>
                 Roland Männchen & Team
             </strong></p>
+        </div>
+        <div class="list_item pageImage hide-small centered">
+            <img src="resources/resized/covid.png" style="width: 100%; max-width: 500px;" />
+        </div>
+    </div>
+
+    <div class="container page emergencyTwo">
+        <div class="list_item pageImage">
+            <h2>Anleitung WhatsApp Termin</h2>
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/73KeNdCIfrc' frameborder='0' allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="list_item">
+            <h2>Notfall / Verlaufskontrolle / Gümmeli</h2>
+            <p>Bei einem <strong>Notfall</strong> oder für <strong>Verlaufskontrollen</strong> (Monobloc, Headgear, Gummizüge, unerwartete Entwicklungen) können wir während des Shutdowns einen WhatsApp-Termin vereinbaren. Speichern Sie meine Praxis-Handy-Nummer <a href="https://wa.me/0041774645858" title="WhatsApp Senden">077 464 58 58</a> unter Ihren normalen Kontakten und schreiben Sie mir danach eine WhatsApp-Nachricht.</p>
+            <p>Ich werde Ihnen ein Datum und einen Termin angeben, wann wir die Kontrolle vornehmen.</p>
+            <p>Bereiten Sie sich vor gemäss Video auf meine Homepage und sorgen sie für gutes Licht.</p>
+            <p><strong>Gümmeli-Express:</strong> Wenn Sie keine Gummizüge mehr haben, schicke ich Ihnen gerne welche per Post. Schreiben Sie einfach eine <a href="https://wa.me/0041774645858?text=G%C3%BCmmeli-Bestellung%3A%20Name%20-%20Adresse%20-%20Art%20%2F%20Tier" title="WhatsApp Senden">WhatsApp</a> mit Ihrem Namen, Adresse und der Art der Gummis (Tier).</p>
         </div>
     </div>
 
@@ -547,7 +590,7 @@
         </div>
     </div>
 
-    <div class="page evenNumbered">
+    <div class="container page evenNumbered">
         <div class="centered" style="width: 100%;">
             <h1><a class="sectionLinkTarget" name="standort">Unser Standort</a></h1>
 
@@ -710,7 +753,7 @@
     </div>
     </div>
 
-    <div class="page evenNumbered">
+    <div class="container page evenNumbered">
         <div class="innerContainer centered">
 
             <h1>Ausbildung, Diplome & Titel Dr. Männchen</h1>
